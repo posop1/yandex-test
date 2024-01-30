@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Golos Text', sans-serif;
+  line-height: 1.6;
+  color: #000;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: 1222px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  padding-top: 28px;
+  padding-bottom: 136px;
+  background: url(/img//headerBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo__container {
+  display: flex;
+  max-width: 245px;
+  align-items: center;
+  gap: 1.5px;
+}
+
+.logo__title {
+  margin-left: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 18px;
+  font-weight: 700;
+  color: #595653;
+}
+
+.header__content__container {
+  margin-top: 62px;
+  max-width: 542px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__content__title {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  font-family: 'Merriweather', serif;
+  color: #313131;
+}
+
+.last__content__title {
+  text-align: center;
+}
+
+.header__content__text {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  color: #313131;
+}
+
+.links__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 66px;
+  background: #1f1f1f;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  width: 100%;
+  max-width: 263px;
+  border: 2px solid #1f1f1f;
+
+  transition: 0.1s ease-in-out;
+}
+
+.links:hover {
+  color: #1f1f1f;
+  background: #fbce51;
+  border: 2px solid #fbce51;
+}
+
+.transparent__link {
+  color: #1f1f1f;
+  background: transparent;
+}
+
+.transparent__link:hover {
+  border: 2px solid #1f1f1f;
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.running__line {
+  font-family: 'Merriweather', serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 18px 0px;
+  background-color: #f54932;
+  color: #fff;
+  animation-iteration-count: infinite;
+}
+
+.running__line div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
