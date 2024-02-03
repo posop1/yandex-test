@@ -34,8 +34,9 @@ body {
 }
 
 .container {
-  max-width: 1222px;
+  max-width: 1241px;
   margin: 0 auto;
+  padding: 0 19px;
 }
 
 /* HEADER */
@@ -104,7 +105,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 20px 49px;
   border-radius: 66px;
   background: #1f1f1f;
   color: #fff;
@@ -153,4 +154,248 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+
+/* MAIN */
+
+.main {
+  padding-top: 80px;
+  padding-bottom: 140px;
+}
+
+.info__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.info__container:last-child {
+  padding-top: 64px;
+}
+
+.info__text {
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  max-width: 764px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #313131;
+}
+
+.mobile__info__text {
+  display: none;
+}
+
+.other__info__text {
+  max-width: 700px;
+  padding-bottom: 60px;
+}
+
+.info__text__red {
+  color: #f54932;
+}
+
+.image__container {
+  flex: 0 0 41%;
+}
+
+.image__container img {
+  max-width: 100%;
+}
+
+.content__table {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 48px;
+}
+
+.content__table hr {
+  background: #d0d0d0;
+}
+
+.table__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item__text {
+  width: 50%;
+  color: #313131;
+  opacity: 70%;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 16px 0px;
+}
+
+.first__table__item {
+  padding-top: 0px;
+}
+
+.item__text__last {
+  padding-left: 16px;
+
+  font-weight: 600;
+  opacity: 100%;
+  border-left: 2px solid #d0d0d0;
+}
+
+del {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+.info__link {
+  color: #3057a2;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.stages__container {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stages__title {
+  max-width: 806px;
+}
+
+.stages__title div {
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  align-items: center;
+  gap: 15px;
+}
+
+.stages__title span {
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 400;
+  color: #313131;
+}
+
+.stages__link {
+  font-family: 'Golos Text', sans-serif;
+  color: #3057a2;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@media (max-width: 1024px) {
+  .info__container {
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .image__container {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .desktop__info__text {
+    display: none;
+  }
+
+  .mobile__info__text {
+    display: block;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    max-width: 764px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #313131;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 48px;
+  }
+  .stages__container {
+    margin-top: 120px;
+  }
+  .header {
+    padding-bottom: 291px;
+  }
+  .logo__container {
+    align-self: flex-start;
+  }
+  .logo__title {
+    font-size: 14.5px;
+  }
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .links__container {
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    width: 100%;
+  }
+  .links {
+    max-width: 100%;
+  }
+  .header__content__text {
+    text-align: start;
+  }
+
+  .info__text {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .mobile__info__text {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .info__text__red {
+    font-size: 28px;
+    line-height: 37px;
+  }
+  .table__item {
+    flex-direction: column;
+  }
+  .item__text {
+    padding: 0;
+    width: 100%;
+    border: none;
+    padding-top: 16px;
+  }
+  .item__text__last {
+    padding-bottom: 16px;
+  }
+  .content__table {
+    padding-bottom: 40px;
+  }
+
+  .stages__title span {
+    font-size: 36px;
+    line-height: 39px;
+  }
+
+  .stages__title div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stages__link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 583px) {
+  .header__content__title {
+    font-size: 36px;
+    line-height: 39px;
+  }
 }
